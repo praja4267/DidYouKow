@@ -36,6 +36,18 @@ class CountryPresenter {
     func configure(with view: CountryView) {
         self.view = view
     }
+    func updateCountryData() {
+          view?.showLoading()
+          RestManager.shared.getRequest(endpoint: Constants.endPoint) { result in
+              switch result {
+              case .success(let country):
+                  self.country = country
+              case .failure(let error):
+                  self.view?.showError(error: error)
+              }
+              self.view?.hideLoading()
+          }
+      }
 }
 
 
@@ -44,4 +56,5 @@ protocol CountryView: class {
     func setScreenTitle(title: String)
     func showLoading()
     func hideLoading()
+    func showError(error: APIError)
 }

@@ -33,6 +33,7 @@ class CountryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        presenter.updateCountryData()
     }
 
     func setupUI() {
