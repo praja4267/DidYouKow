@@ -1,6 +1,6 @@
 platform :ios, '11.0'
 
-target 'KnowSomeThing' do
+target 'DidYouKnow' do
   use_frameworks!
     pod 'Anchorage'
     pod 'SDWebImage'
