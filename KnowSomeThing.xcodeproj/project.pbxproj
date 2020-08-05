@@ -17,7 +17,6 @@
 		8418A7B624DA69D70071F47F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7B524DA69D70071F47F /* CountryModel.swift */; };
 		8418A7B824DA6B040071F47F /* CountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7B724DA6B040071F47F /* CountryPresenter.swift */; };
 		8418A7BB24DA6BA60071F47F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */; };
-		84D1512C24DAA3AF0069D426 /* country.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D1512B24DAA3AF0069D426 /* country.json */; };
 		84D1513A24DAD1120069D426 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1513924DAD1120069D426 /* RestManager.swift */; };
 		84D1513F24DAD48B0069D426 /* ViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1513C24DAD48B0069D426 /* ViewController+extensions.swift */; };
 		84D1514024DAD48B0069D426 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1513D24DAD48B0069D426 /* AvatarView.swift */; };
@@ -45,7 +44,7 @@
 		44886507D072E31BA5A21BE9 /* Pods-KnowSomeThing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowSomeThing.release.xcconfig"; path = "Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing.release.xcconfig"; sourceTree = "<group>"; };
 		7EF5AA6367DEABF44D4259C1 /* Pods-KnowSomeThing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowSomeThing.debug.xcconfig"; path = "Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing.debug.xcconfig"; sourceTree = "<group>"; };
 		821105E9C0E1F0D4FD6099B1 /* Pods_KnowSomeThing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowSomeThing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8418A77D24DA59D90071F47F /* KnowSomeThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowSomeThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8418A77D24DA59D90071F47F /* DidYouKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidYouKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8418A78024DA59D90071F47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8418A78424DA59D90071F47F /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		8418A78924DA59DC0071F47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		8418A7B524DA69D70071F47F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		8418A7B724DA6B040071F47F /* CountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPresenter.swift; sourceTree = "<group>"; };
 		8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		84D1512B24DAA3AF0069D426 /* country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = country.json; sourceTree = "<group>"; };
 		84D1513924DAD1120069D426 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		84D1513C24DAD48B0069D426 /* ViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+extensions.swift"; sourceTree = "<group>"; };
 		84D1513D24DAD48B0069D426 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -116,7 +114,7 @@
 		8418A77E24DA59D90071F47F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8418A77D24DA59D90071F47F /* KnowSomeThing.app */,
+				8418A77D24DA59D90071F47F /* DidYouKnow.app */,
 				8418A79324DA59DD0071F47F /* KnowSomeThingTests.xctest */,
 				8418A79E24DA59DD0071F47F /* KnowSomeThingUITests.xctest */,
 			);
@@ -133,7 +131,6 @@
 				8418A78924DA59DC0071F47F /* Assets.xcassets */,
 				8418A78B24DA59DC0071F47F /* LaunchScreen.storyboard */,
 				8418A78E24DA59DC0071F47F /* Info.plist */,
-				84D1512B24DAA3AF0069D426 /* country.json */,
 			);
 			path = KnowSomeThing;
 			sourceTree = "<group>";
@@ -254,7 +251,7 @@
 			);
 			name = KnowSomeThing;
 			productName = KnowSomeThing;
-			productReference = 8418A77D24DA59D90071F47F /* KnowSomeThing.app */;
+			productReference = 8418A77D24DA59D90071F47F /* DidYouKnow.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8418A79224DA59DD0071F47F /* KnowSomeThingTests */ = {
@@ -343,7 +340,6 @@
 			files = (
 				8418A78D24DA59DC0071F47F /* LaunchScreen.storyboard in Resources */,
 				8418A78A24DA59DC0071F47F /* Assets.xcassets in Resources */,
-				84D1512C24DAA3AF0069D426 /* country.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +605,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DidYouKnow;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -628,7 +624,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DidYouKnow;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
