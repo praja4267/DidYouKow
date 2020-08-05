@@ -18,6 +18,7 @@
 		8418A7B824DA6B040071F47F /* CountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7B724DA6B040071F47F /* CountryPresenter.swift */; };
 		8418A7BB24DA6BA60071F47F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */; };
 		84D1512C24DAA3AF0069D426 /* country.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D1512B24DAA3AF0069D426 /* country.json */; };
+		84D1513A24DAD1120069D426 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1513924DAD1120069D426 /* RestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8418A7B724DA6B040071F47F /* CountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPresenter.swift; sourceTree = "<group>"; };
 		8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		84D1512B24DAA3AF0069D426 /* country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = country.json; sourceTree = "<group>"; };
+		84D1513924DAD1120069D426 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		8418A77F24DA59D90071F47F /* KnowSomeThing */ = {
 			isa = PBXGroup;
 			children = (
+				84D1513624DAD0D40069D426 /* Network */,
 				8418A78024DA59D90071F47F /* AppDelegate.swift */,
 				8418A7B024DA697C0071F47F /* Screens */,
 				8418A78924DA59DC0071F47F /* Assets.xcassets */,
@@ -195,6 +198,14 @@
 				8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		84D1513624DAD0D40069D426 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84D1513924DAD1120069D426 /* RestManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AAF31B6CE64FE78282314CDC /* Pods */ = {
@@ -384,6 +395,7 @@
 				8418A78524DA59D90071F47F /* CountryViewController.swift in Sources */,
 				8418A7B824DA6B040071F47F /* CountryPresenter.swift in Sources */,
 				8418A7BB24DA6BA60071F47F /* ItemTableViewCell.swift in Sources */,
+				84D1513A24DAD1120069D426 /* RestManager.swift in Sources */,
 				8418A78124DA59D90071F47F /* AppDelegate.swift in Sources */,
 				8418A7B624DA69D70071F47F /* CountryModel.swift in Sources */,
 			);
