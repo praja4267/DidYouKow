@@ -4,4 +4,5 @@ target 'KnowSomeThing' do
   use_frameworks!
     pod 'Anchorage'
     pod 'SDWebImage'
+    pod 'SwiftLint'
 end

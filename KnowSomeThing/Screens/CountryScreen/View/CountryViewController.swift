@@ -11,7 +11,7 @@ import Anchorage
 
 class CountryViewController: UIViewController {
     let itemsTableView: UITableView = {
-        let tableView = UITableView(frame: CGRect.zero, style:UITableView.Style.plain)
+        let tableView = UITableView(frame: CGRect.zero, style: UITableView.Style.plain)
         tableView.register(ItemTableViewCell.self, forCellReuseIdentifier: "ItemTableViewCell")
         tableView.backgroundColor = UIColor.clear
         tableView.showsVerticalScrollIndicator = false
@@ -19,13 +19,15 @@ class CountryViewController: UIViewController {
     }()
     
     let presenter: CountryPresenter
-    var viewModels: [ItemModel]?
+    var models: [ItemModel]?
     
     let loader: UIActivityIndicatorView = {
         let loader = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
          loader.hidesWhenStopped = true
         return loader
     }()
+    
+    var refreshControl = UIRefreshControl()
     
     init() {
         self.presenter = CountryPresenter()
@@ -50,16 +52,31 @@ class CountryViewController: UIViewController {
         self.view.addSubview(itemsTableView)
         itemsTableView.edgeAnchors == view.edgeAnchors
         itemsTableView.dataSource = self
+        itemsTableView.delegate = self
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.tintColor = .defaultBlue
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        itemsTableView.addSubview(refreshControl)
+        itemsTableView.tableFooterView = UIView()
+    }
+    
+    @objc func refresh(_ sender: UIRefreshControl) {
+        presenter.updateCountryData {
+            DispatchQueue.main.async {[weak self] in
+                UIView.animate(withDuration: 0.5, animations: {
+                    sender.endRefreshing()
+                    self?.itemsTableView.contentOffset = CGPoint.zero
+                })
+            }
+        }
     }
 }
-
 
 extension CountryViewController: CountryView {
     func showError(error: APIError) {
         DispatchQueue.main.async {
             self.showAlert(title: "Error", message: error.localizedDescription)
         }
-        
     }
     
     func setScreenTitle(title: String) {
@@ -69,7 +86,7 @@ extension CountryViewController: CountryView {
     }
     
     func setViewModels(_ viewModels: [ItemModel]) {
-        self.viewModels = viewModels
+        self.models = viewModels
         DispatchQueue.main.async { [weak self] in
             self?.itemsTableView.reloadData()
         }
@@ -84,22 +101,28 @@ extension CountryViewController: CountryView {
             self?.loader.stopAnimating()
         }
     }
-    
-    
 }
 
 extension CountryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModels?.count ?? 0
+        return models?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell, let item = viewModels?[indexPath.row] else { return UITableViewCell() }
+        guard let item = models?[indexPath.row] else { return UITableViewCell() }
+        if item.imageHref == nil && item.title == nil && item.description == nil {
+            return UITableViewCell()
+        }
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell else { return UITableViewCell() }
         cell.configureCell(item: item)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let item = models?[indexPath.row] , item.imageHref == nil && item.title == nil && item.description == nil {
+            return 0.1
+        }
         return UITableView.automaticDimension
     }
     

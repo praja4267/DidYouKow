@@ -1,0 +1,35 @@
+disabled_rules:
+  - comma
+  - cyclomatic_complexity
+  - empty_parentheses_with_trailing_closure
+  - file_length
+  - function_body_length
+  - function_parameter_count
+  - line_length
+  - nesting
+  - todo
+  - type_body_length
+  - variable_name
+  - valid_docs
+  - trailing_whitespace
+  - trailing_newline
+  - class_delegate_protocol
+  - weak_delegate
+
+type_name:
+  min_length: 2
+
+variable_name:
+    excluded:
+        - URL
+
+trailing_comma:
+  mandatory_comma: false
+
+statement_position:
+  statement_mode: uncuddled_else
+
+excluded:
+  - Pods
+  - Services/API/Generated/GraphQLAPI.swift
+  - External

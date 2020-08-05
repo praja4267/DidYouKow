@@ -18,11 +18,11 @@ class RestManager {
             return
         }
         let request = URLRequest(url: url)
-        session.dataTask(with: request) { (data, response, error) in
+        session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 completion(Result.failure(.otherError(error: error)))
             }
-            guard let jsonData = String(decoding: data!, as: UTF8.self).data(using: .utf8) else {
+            guard let data = data, let jsonData = String(decoding: data, as: UTF8.self).data(using: .utf8) else {
                 completion(Result.failure(.invalidResponse))
                 return
             }

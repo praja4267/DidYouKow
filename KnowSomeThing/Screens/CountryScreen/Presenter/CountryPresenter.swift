@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class CountryPresenter {
     weak var view: CountryView?
     var viewModels: [ItemModel] = []
@@ -27,6 +28,7 @@ class CountryPresenter {
     struct Constants {
         static let endPoint = "/s/2iodh4vg0eortkl/facts.json"
     }
+    
     init() {
     }
     
@@ -36,7 +38,8 @@ class CountryPresenter {
     func configure(with view: CountryView) {
         self.view = view
     }
-    func updateCountryData() {
+    
+    func updateCountryData(completion: (() -> Void)? = nil) {
           view?.showLoading()
           RestManager.shared.getRequest(endpoint: Constants.endPoint) { result in
               switch result {
@@ -46,10 +49,10 @@ class CountryPresenter {
                   self.view?.showError(error: error)
               }
               self.view?.hideLoading()
+            completion?()
           }
       }
 }
-
 
 protocol CountryView: class {
     func setViewModels(_ viewModels: [ItemModel])
