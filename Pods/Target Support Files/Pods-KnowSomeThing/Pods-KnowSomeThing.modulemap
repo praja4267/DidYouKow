@@ -1,6 +1,0 @@
-framework module Pods_KnowSomeThing {
-  umbrella header "Pods-KnowSomeThing-umbrella.h"
-
-  export *
-  module * { export * }
-}

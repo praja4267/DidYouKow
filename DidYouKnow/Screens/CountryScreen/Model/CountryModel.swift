@@ -1,6 +1,6 @@
 //
 //  CountryModel.swift
-//  KnowSomeThing
+//  DidYouKnow
 //
 //  Created by Rajasekhar on 05/08/20.
 //  Copyright © 2020 Rajasekhar. All rights reserved.

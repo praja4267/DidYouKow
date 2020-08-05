@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BEB8A782972B55CB7CCF7FE /* Pods_KnowSomeThing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821105E9C0E1F0D4FD6099B1 /* Pods_KnowSomeThing.framework */; };
+		5D786D43090DE8B354C85B62 /* Pods_DidYouKnow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88345C9EC6C2C829B5633B9 /* Pods_DidYouKnow.framework */; };
 		8418A78124DA59D90071F47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A78024DA59D90071F47F /* AppDelegate.swift */; };
 		8418A78524DA59D90071F47F /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A78424DA59D90071F47F /* CountryViewController.swift */; };
 		8418A78A24DA59DC0071F47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8418A78924DA59DC0071F47F /* Assets.xcassets */; };
 		8418A78D24DA59DC0071F47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8418A78B24DA59DC0071F47F /* LaunchScreen.storyboard */; };
-		8418A79824DA59DD0071F47F /* KnowSomeThingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A79724DA59DD0071F47F /* KnowSomeThingTests.swift */; };
-		8418A7A324DA59DD0071F47F /* KnowSomeThingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7A224DA59DD0071F47F /* KnowSomeThingUITests.swift */; };
 		8418A7B624DA69D70071F47F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7B524DA69D70071F47F /* CountryModel.swift */; };
 		8418A7B824DA6B040071F47F /* CountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7B724DA6B040071F47F /* CountryPresenter.swift */; };
 		8418A7BB24DA6BA60071F47F /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */; };
@@ -23,39 +21,14 @@
 		84D1514124DAD48B0069D426 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1513E24DAD48B0069D426 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8418A79424DA59DD0071F47F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8418A77524DA59D90071F47F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8418A77C24DA59D90071F47F;
-			remoteInfo = KnowSomeThing;
-		};
-		8418A79F24DA59DD0071F47F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8418A77524DA59D90071F47F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8418A77C24DA59D90071F47F;
-			remoteInfo = KnowSomeThing;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		44886507D072E31BA5A21BE9 /* Pods-KnowSomeThing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowSomeThing.release.xcconfig"; path = "Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing.release.xcconfig"; sourceTree = "<group>"; };
-		7EF5AA6367DEABF44D4259C1 /* Pods-KnowSomeThing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowSomeThing.debug.xcconfig"; path = "Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing.debug.xcconfig"; sourceTree = "<group>"; };
-		821105E9C0E1F0D4FD6099B1 /* Pods_KnowSomeThing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowSomeThing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F46F7B4AC01AC1522140E /* Pods-DidYouKnow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DidYouKnow.debug.xcconfig"; path = "Target Support Files/Pods-DidYouKnow/Pods-DidYouKnow.debug.xcconfig"; sourceTree = "<group>"; };
 		8418A77D24DA59D90071F47F /* DidYouKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidYouKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8418A78024DA59D90071F47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8418A78424DA59D90071F47F /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		8418A78924DA59DC0071F47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8418A78C24DA59DC0071F47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8418A78E24DA59DC0071F47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8418A79324DA59DD0071F47F /* DidYouKnowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DidYouKnowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8418A79724DA59DD0071F47F /* KnowSomeThingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowSomeThingTests.swift; sourceTree = "<group>"; };
-		8418A79924DA59DD0071F47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8418A79E24DA59DD0071F47F /* DidYouKnowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DidYouKnowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8418A7A224DA59DD0071F47F /* KnowSomeThingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowSomeThingUITests.swift; sourceTree = "<group>"; };
-		8418A7A424DA59DD0071F47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8418A7B524DA69D70071F47F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		8418A7B724DA6B040071F47F /* CountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPresenter.swift; sourceTree = "<group>"; };
 		8418A7BA24DA6BA60071F47F /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +36,8 @@
 		84D1513C24DAD48B0069D426 /* ViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+extensions.swift"; sourceTree = "<group>"; };
 		84D1513D24DAD48B0069D426 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		84D1513E24DAD48B0069D426 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B8B24CCEBEA17714153293C9 /* Pods-DidYouKnow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DidYouKnow.release.xcconfig"; path = "Target Support Files/Pods-DidYouKnow/Pods-DidYouKnow.release.xcconfig"; sourceTree = "<group>"; };
+		E88345C9EC6C2C829B5633B9 /* Pods_DidYouKnow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DidYouKnow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,21 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BEB8A782972B55CB7CCF7FE /* Pods_KnowSomeThing.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8418A79024DA59DD0071F47F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8418A79B24DA59DD0071F47F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5D786D43090DE8B354C85B62 /* Pods_DidYouKnow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +55,7 @@
 		39C737E1447494FAC007FA9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				821105E9C0E1F0D4FD6099B1 /* Pods_KnowSomeThing.framework */,
+				E88345C9EC6C2C829B5633B9 /* Pods_DidYouKnow.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,9 +63,7 @@
 		8418A77424DA59D90071F47F = {
 			isa = PBXGroup;
 			children = (
-				8418A77F24DA59D90071F47F /* KnowSomeThing */,
-				8418A79624DA59DD0071F47F /* KnowSomeThingTests */,
-				8418A7A124DA59DD0071F47F /* KnowSomeThingUITests */,
+				8418A77F24DA59D90071F47F /* DidYouKnow */,
 				8418A77E24DA59D90071F47F /* Products */,
 				AAF31B6CE64FE78282314CDC /* Pods */,
 				39C737E1447494FAC007FA9D /* Frameworks */,
@@ -115,13 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				8418A77D24DA59D90071F47F /* DidYouKnow.app */,
-				8418A79324DA59DD0071F47F /* DidYouKnowTests.xctest */,
-				8418A79E24DA59DD0071F47F /* DidYouKnowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8418A77F24DA59D90071F47F /* KnowSomeThing */ = {
+		8418A77F24DA59D90071F47F /* DidYouKnow */ = {
 			isa = PBXGroup;
 			children = (
 				84D1513B24DAD4120069D426 /* Utils */,
@@ -132,25 +89,7 @@
 				8418A78B24DA59DC0071F47F /* LaunchScreen.storyboard */,
 				8418A78E24DA59DC0071F47F /* Info.plist */,
 			);
-			path = KnowSomeThing;
-			sourceTree = "<group>";
-		};
-		8418A79624DA59DD0071F47F /* KnowSomeThingTests */ = {
-			isa = PBXGroup;
-			children = (
-				8418A79724DA59DD0071F47F /* KnowSomeThingTests.swift */,
-				8418A79924DA59DD0071F47F /* Info.plist */,
-			);
-			path = KnowSomeThingTests;
-			sourceTree = "<group>";
-		};
-		8418A7A124DA59DD0071F47F /* KnowSomeThingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8418A7A224DA59DD0071F47F /* KnowSomeThingUITests.swift */,
-				8418A7A424DA59DD0071F47F /* Info.plist */,
-			);
-			path = KnowSomeThingUITests;
+			path = DidYouKnow;
 			sourceTree = "<group>";
 		};
 		8418A7B024DA697C0071F47F /* Screens */ = {
@@ -225,8 +164,8 @@
 		AAF31B6CE64FE78282314CDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7EF5AA6367DEABF44D4259C1 /* Pods-KnowSomeThing.debug.xcconfig */,
-				44886507D072E31BA5A21BE9 /* Pods-KnowSomeThing.release.xcconfig */,
+				2C1F46F7B4AC01AC1522140E /* Pods-DidYouKnow.debug.xcconfig */,
+				B8B24CCEBEA17714153293C9 /* Pods-DidYouKnow.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -254,42 +193,6 @@
 			productReference = 8418A77D24DA59D90071F47F /* DidYouKnow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8418A79224DA59DD0071F47F /* DidYouKnowTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8418A7AA24DA59DD0071F47F /* Build configuration list for PBXNativeTarget "DidYouKnowTests" */;
-			buildPhases = (
-				8418A78F24DA59DD0071F47F /* Sources */,
-				8418A79024DA59DD0071F47F /* Frameworks */,
-				8418A79124DA59DD0071F47F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8418A79524DA59DD0071F47F /* PBXTargetDependency */,
-			);
-			name = DidYouKnowTests;
-			productName = KnowSomeThingTests;
-			productReference = 8418A79324DA59DD0071F47F /* DidYouKnowTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8418A79D24DA59DD0071F47F /* DidYouKnowUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8418A7AD24DA59DD0071F47F /* Build configuration list for PBXNativeTarget "DidYouKnowUITests" */;
-			buildPhases = (
-				8418A79A24DA59DD0071F47F /* Sources */,
-				8418A79B24DA59DD0071F47F /* Frameworks */,
-				8418A79C24DA59DD0071F47F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8418A7A024DA59DD0071F47F /* PBXTargetDependency */,
-			);
-			name = DidYouKnowUITests;
-			productName = KnowSomeThingUITests;
-			productReference = 8418A79E24DA59DD0071F47F /* DidYouKnowUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,14 +205,6 @@
 				TargetAttributes = {
 					8418A77C24DA59D90071F47F = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					8418A79224DA59DD0071F47F = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 8418A77C24DA59D90071F47F;
-					};
-					8418A79D24DA59DD0071F47F = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 8418A77C24DA59D90071F47F;
 					};
 				};
 			};
@@ -327,8 +222,6 @@
 			projectRoot = "";
 			targets = (
 				8418A77C24DA59D90071F47F /* DidYouKnow */,
-				8418A79224DA59DD0071F47F /* DidYouKnowTests */,
-				8418A79D24DA59DD0071F47F /* DidYouKnowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,20 +233,6 @@
 			files = (
 				8418A78D24DA59DC0071F47F /* LaunchScreen.storyboard in Resources */,
 				8418A78A24DA59DC0071F47F /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8418A79124DA59DD0071F47F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8418A79C24DA59DD0071F47F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +254,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KnowSomeThing-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DidYouKnow-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,15 +284,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DidYouKnow/Pods-DidYouKnow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DidYouKnow/Pods-DidYouKnow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnowSomeThing/Pods-KnowSomeThing-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DidYouKnow/Pods-DidYouKnow-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -435,36 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8418A78F24DA59DD0071F47F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8418A79824DA59DD0071F47F /* KnowSomeThingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8418A79A24DA59DD0071F47F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8418A7A324DA59DD0071F47F /* KnowSomeThingUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8418A79524DA59DD0071F47F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8418A77C24DA59D90071F47F /* DidYouKnow */;
-			targetProxy = 8418A79424DA59DD0071F47F /* PBXContainerItemProxy */;
-		};
-		8418A7A024DA59DD0071F47F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8418A77C24DA59D90071F47F /* DidYouKnow */;
-			targetProxy = 8418A79F24DA59DD0071F47F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8418A78B24DA59DC0071F47F /* LaunchScreen.storyboard */ = {
@@ -594,17 +444,17 @@
 		};
 		8418A7A824DA59DD0071F47F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF5AA6367DEABF44D4259C1 /* Pods-KnowSomeThing.debug.xcconfig */;
+			baseConfigurationReference = 2C1F46F7B4AC01AC1522140E /* Pods-DidYouKnow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThing/Info.plist;
+				INFOPLIST_FILE = DidYouKnow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raja.DidYouKnow;
 				PRODUCT_NAME = DidYouKnow;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,100 +463,20 @@
 		};
 		8418A7A924DA59DD0071F47F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44886507D072E31BA5A21BE9 /* Pods-KnowSomeThing.release.xcconfig */;
+			baseConfigurationReference = B8B24CCEBEA17714153293C9 /* Pods-DidYouKnow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThing/Info.plist;
+				INFOPLIST_FILE = DidYouKnow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raja.DidYouKnow;
 				PRODUCT_NAME = DidYouKnow;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8418A7AB24DA59DD0071F47F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DidYouKnow.app/DidYouKnow";
-			};
-			name = Debug;
-		};
-		8418A7AC24DA59DD0071F47F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DidYouKnow.app/DidYouKnow";
-			};
-			name = Release;
-		};
-		8418A7AE24DA59DD0071F47F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KnowSomeThing;
-			};
-			name = Debug;
-		};
-		8418A7AF24DA59DD0071F47F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KnowSomeThingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raja.KnowSomeThingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KnowSomeThing;
 			};
 			name = Release;
 		};
@@ -727,24 +497,6 @@
 			buildConfigurations = (
 				8418A7A824DA59DD0071F47F /* Debug */,
 				8418A7A924DA59DD0071F47F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8418A7AA24DA59DD0071F47F /* Build configuration list for PBXNativeTarget "DidYouKnowTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8418A7AB24DA59DD0071F47F /* Debug */,
-				8418A7AC24DA59DD0071F47F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8418A7AD24DA59DD0071F47F /* Build configuration list for PBXNativeTarget "DidYouKnowUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8418A7AE24DA59DD0071F47F /* Debug */,
-				8418A7AF24DA59DD0071F47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
